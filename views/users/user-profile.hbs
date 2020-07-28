@@ -1,6 +1,8 @@
 {{#if user}}
     <h2>Welcome, {{ user.username }}!</h2>
     <p>This is your profile page my friend! And your email is: {{ user.email }}</p>
+    <h3>This is your profile pic:</h3> <br>
+    <img src="{{ user.profilePic }}" alt="{{ user.username }}'s profile picture" style="max-width: 200px;">
 {{else}}
     <p>Still no logged in user, sorry!</p>
 {{/if}}
